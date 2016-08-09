@@ -1,10 +1,15 @@
 <html>
   <head>
-    FB Pixel
+    <title>FB Pixel</title>
+    <script>
+      function purchase() {
+        fbq('track', 'Purchase', {value: '10.00', currency:'USD'});
+      }
+    </script>
   </head>
   <body>
     <h1>Hello World</h1>
-    <button label="Purchase"></button>
+    <button type="button" onClick="purchase()">Purchase</button>
   </body>
 </html>
 <!-- Facebook Pixel Code -->
