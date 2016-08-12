@@ -35,4 +35,18 @@ function show_tos() {
     // Handle response
   });
 }
+
+function build_form() {
+  /**
+   * Executing this will immediately load a popup, be sure to
+   * associate this with an appropriate event.
+   */
+  FB.ui({
+    method: 'lead_gen',
+    page_id: 555759244607717,
+    ad_account_id: 555759244607717, // Note: This does NOT contain 'act_'
+  }, function(response) {
+    // Handle response.
+  });
+}
 </script>
