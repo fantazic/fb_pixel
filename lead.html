@@ -33,7 +33,7 @@ function show_tos() {
     page_id: 555759244607717,
     display: 'popup'
   }, function(response) {
-    // Handle response
+    console.log(response);
   });
 }
 
@@ -45,9 +45,9 @@ function build_form() {
   FB.ui({
     method: 'lead_gen',
     page_id: 555759244607717,
-    ad_account_id: 555759244607717, // Note: This does NOT contain 'act_'
+    ad_account_id: 161427774285988, // Note: This does NOT contain 'act_'
   }, function(response) {
-    // Handle response.
+    console.log(response);
   });
 }
 </script>
