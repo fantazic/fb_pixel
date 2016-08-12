@@ -1,3 +1,12 @@
+<html>
+  <head>
+    <title>FB Pixel</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <button type="button" onClick="show_tos()">ToS</button>
+  </body>
+</html>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -17,11 +26,13 @@
 </script>
 
 <script>
-FB.ui({
-    method: 'lead_gen_tos',
-  page_id: 555759244607717,
-  display: 'popup'
-}, function(response) {
-  // Handle response
-});
+function show_tos() {
+  FB.ui({
+      method: 'lead_gen_tos',
+    page_id: 555759244607717,
+    display: 'popup'
+  }, function(response) {
+    // Handle response
+  });
+}
 </script>
